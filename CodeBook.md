@@ -37,7 +37,7 @@ These were further summarized by taking their mean for each unique subject and a
 
 # Variables
  
-The variables in file "data2.txt" constitute the averages for each subject and activity of the original HAR data set. The complete list of variables is the following:
+The variables in file "meanBySubjectAndActivity.txt" constitute the averages for each subject and activity of the original HAR data set. The complete list of variables is the following:
 
  Variable  | Description 
  --------- | ----------- 

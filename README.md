@@ -19,7 +19,7 @@ names contain the strings "mean" or "std"
 3. Renames the features such that they become compliant with the R syntax
 4. Projects the data frame `data` such that only the columns determined in step 2 are kept
 5. Adds activity data to the data set as a column of type `factor` named `activity`
-6. Copies `data` to a second data frame called `data2`
-7. Adds the subject id to `data2`, under name `subject` 
-8. Reshapes and summarizes the variables of `data2` by performing their mean for a given subject and activity
-9. Writes the resulting data frame `data2` to file "data2.txt"  
+6. Copies `data` to a second data frame called `meanBySubjectAndActivity`
+7. Adds the subject id to `meanBySubjectAndActivity`, under name `subject` 
+8. Reshapes and summarizes the variables of `meanBySubjectAndActivity` by performing their mean for a given subject and activity
+9. Writes the resulting data frame `meanBySubjectAndActivity` to file "meanBySubjectAndActivity.txt"  
