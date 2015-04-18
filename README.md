@@ -11,4 +11,15 @@ The script will write a file called text2.txt that contains the variables descri
 
 ## Processing performed by the script
 
+The script performs the following steps:
 
+1. Merges the data in "train/X_train.txt" and "test/X_test.txt" in a single data frame called `data`
+2. Reads the names of the features from "features.txt". Only the features that contain means and standard deviations are retained, i.e. when the
+names contain the strings "mean" or "std"
+3. Renames the features such that they become compliant with the R syntax
+4. Projects the data frame `data` such that only the columns determined in step 2 are kept
+5. Adds activity data to the data set as a column of type `factor` named `activity`
+6. Copies `data` to a second data frame called `data2`
+7. Adds the subject id to `data2`, under name `subject` 
+8. Reshapes and summarizes the variables described in "CodeBook.md" by performing their mean for a given subject and activity
+9. Writes the resulting data frame `data2` to file "data2.txt"  
