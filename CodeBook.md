@@ -37,10 +37,10 @@ meanFreq: Weighted average of the frequency components to obtain a mean frequenc
 
 The complete list of variables of each feature vector is the following:
 
-| Variable  | Description |
-| --------- | ----------- |
-| subject   | the id of the person being monitored, an integer from 1 to 30|
-|activity|the activity of the subject, one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|
+ Variable  | Description 
+ --------- | ----------- 
+ subject   | the id of the person being monitored, an integer from 1 to 30|
+activity|the activity of the subject, one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 
 
