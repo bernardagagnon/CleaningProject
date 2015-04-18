@@ -41,85 +41,82 @@ The complete list of variables of each feature vector is the following:
  --------- | ----------- 
  subject   | the id of the person being monitored, an integer from 1 to 30|
 activity|the activity of the subject, one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-
-
-
-tBodyAcc_mean_X		mean body acceleration, in multiple of "g", along X axis
-tBodyAcc_mean_Y		mean body acceleration, in multiple of "g", along Y axis     
-tBodyAcc_mean_Z		mean body acceleration, in multiple of "g", along Z axis
-tBodyAcc_std_X		standard deviation of body acceleration, in multiple of "g", along X axis
-tBodyAcc_std_Y		standard deviation of body acceleration, in multiple of "g", along Y axis
-tBodyAcc_std_Z		standard deviation of body acceleration, in multiple of "g", along Z axis
-tGravityAcc_mean_X	mean gravity acceleration, in multiple of "g", along X axis
-tGravityAcc_mean_Y	mean gravity acceleration, in multiple of "g", along Y axis
-tGravityAcc_mean_Z	mean gravity acceleration, in multiple of "g", along Z axis
-tGravityAcc_std_X	standard deviation of gravity acceleration, in multiple of "g", along X axis
-tGravityAcc_std_Y	standard deviation of gravity acceleration, in multiple of "g", along Y axis
-tGravityAcc_std_Z	standard deviation of gravity acceleration, in multiple of "g", along Z axis
-tBodyAccJerk_mean_X	mean body acceleration derivative, in multiple of "g" per second, along X axis
-tBodyAccJerk_mean_Y	mean body acceleration derivative, in multiple of "g" per second, along Y axis
-tBodyAccJerk_mean_Z	mean body acceleration derivative, in multiple of "g" per second, along Z axis
-tBodyAccJerk_std_X	standard deviation of body acceleration derivative, in multiple of "g" per second, along X axis
-tBodyAccJerk_std_Y	standard deviation of body acceleration derivative, in multiple of "g" per second, along Y axis
-tBodyAccJerk_std_Z	standard deviation of body acceleration derivative, in multiple of "g" per second, along Z axis
-tBodyGyro_mean_X	mean body angular velocity, in rad/sec, along X axis
-tBodyGyro_mean_Y	mean body angular velocity, in rad/sec, along Y axis
-tBodyGyro_mean_Z	mean body angular velocity, in rad/sec, along Z axis
-tBodyGyro_std_X		standard deviation of body angular velocity, in rad/sec, along X axis
-tBodyGyro_std_Y		standard deviation of body angular velocity, in rad/sec, along Y axis
-tBodyGyro_std_Z		standard deviation of body angular velocity, in rad/sec, along Z axis
-tBodyGyroJerk_mean_X	mean of body angular velocity derivative, in rad/sec2, along X axis
-tBodyGyroJerk_mean_Y	mean of body angular velocity derivative, in rad/sec2, along Y axis
-tBodyGyroJerk_mean_Z	mean of body angular velocity derivative, in rad/sec2, along Z axis
-tBodyGyroJerk_std_X		standard deviation of body angular velocity derivative, in rad/sec2, along X axis
-tBodyGyroJerk_std_Y		standard deviation of body angular velocity derivative, in rad/sec2, along Y axis
-tBodyGyroJerk_std_Z		standard deviation of body angular velocity derivative, in rad/sec2, along Z axis
-tBodyAccMag_mean		mean body acceleration magnitude, in multiple of "g"
-tBodyAccMag_std			standard deviation of body acceleration magnitude, in multiple of "g"
-tGravityAccMag_mean		mean gravity acceleration magnitude, in multiple of "g"
-tGravityAccMag_std		standard deviation of gravity acceleration magnitude, in multiple of "g"
-tBodyAccJerkMag_mean	mean gravity acceleration derivative magnitude, in multiple of "g"/sec
-tBodyAccJerkMag_std		standard deviation of gravity acceleration derivative magnitude, in multiple of "g"/sec
-tBodyGyroMag_mean		mean body angular velocity magnitude, in rad/sec
-tBodyGyroMag_std		standard deviation of body angular velocity magnitude, in rad/sec
-tBodyGyroJerkMag_mean	mean body angular velocity derivative magnitude, in rad/sec2
-tBodyGyroJerkMag_std	standard deviation of body angular velocity derivative magnitude, in rad/sec2
-fBodyAcc_mean_X			mean of FFT coefficients for body acceleration along X axis
-fBodyAcc_mean_Y			mean of FFT coefficients for body acceleration along Y axis
-fBodyAcc_mean_Z			mean of FFT coefficients for body acceleration along Z axis
-fBodyAcc_std_X			standard deviation of FFT coefficients for body acceleration along X axis
-fBodyAcc_std_Y			standard deviation of FFT coefficients for body acceleration along Y axis
-fBodyAcc_std_Z			standard deviation of FFT coefficients for body acceleration along Z axis
-fBodyAcc_meanFreq_X		Weighted average of the frequency components for body acceleration along X axis
-fBodyAcc_meanFreq_Y		Weighted average of the frequency components for body acceleration along Y axis
-fBodyAcc_meanFreq_Z		Weighted average of the frequency components for body acceleration along Z axis
-fBodyAccJerk_mean_X		mean of FFT coefficients for body acceleration derivative along X axis
-fBodyAccJerk_mean_Y		mean of FFT coefficients for body acceleration derivative along Y axis
-fBodyAccJerk_mean_Z		mean of FFT coefficients for body acceleration derivative along Z axis
-fBodyAccJerk_std_X		standard deviation of FFT coefficients for body acceleration derivative along X axis
-fBodyAccJerk_std_Y		standard deviation of FFT coefficients for body acceleration derivative along Y axis
-fBodyAccJerk_std_Z		standard deviation of FFT coefficients for body acceleration derivative along Z axis
-fBodyAccJerk_meanFreq_X	Weighted average of the frequency components for body acceleration derivative along X axis
-fBodyAccJerk_meanFreq_Y	Weighted average of the frequency components for body acceleration derivative along Y axis
-fBodyAccJerk_meanFreq_Z	Weighted average of the frequency components for body acceleration derivative along Z axis
-fBodyGyro_mean_X		mean of FFT coefficients for body angular velocity along X axis
-fBodyGyro_mean_Y		mean of FFT coefficients for body angular velocity along Y axis
-fBodyGyro_mean_Z		mean of FFT coefficients for body angular velocity along Z axis
-fBodyGyro_std_X			standard deviation of FFT coefficients for body angular velocity along X axis
-fBodyGyro_std_Y			standard deviation of FFT coefficients for body angular velocity along Y axis
-fBodyGyro_std_Z			standard deviation of FFT coefficients for body angular velocity along Z axis
-fBodyGyro_meanFreq_X	Weighted average of the frequency components for body angular velocity along X axis
-fBodyGyro_meanFreq_Y	Weighted average of the frequency components for body angular velocity along Y axis
-fBodyGyro_meanFreq_Z	Weighted average of the frequency components for body angular velocity along Z axis
-fBodyAccMag_mean		mean of FFT coefficients for body acceleration magnitude
-fBodyAccMag_std			standard deviation of FFT coefficients for body acceleration magnitude
-fBodyAccMag_meanFreq	Weighted average of the frequency components for ody acceleration magnitude
-fBodyAccJerkMag_mean	mean of FFT coefficients for body acceleration derivative magnitude
-fBodyAccJerkMag_std		standard deviation of FFT coefficients for body acceleration derivative magnitude
-fBodyAccJerkMag_meanFreq	Weighted average of the frequency components for body acceleration derivative magnitude
-fBodyGyroMag_mean		mean of FFT coefficients for body angular velocity magnitude
-fBodyGyroMag_std		standard deviation of FFT coefficients for body angular velocity magnitude
-fBodyGyroMag_meanFreq	Weighted average of the frequency components for body angular velocity magnitude
-fBodyGyroJerkMag_mean	mean of FFT coefficients for body angular velocity derivative magnitude
-fBodyGyroJerkMag_std	standard deviation of FFT coefficients for body angular velocity derivativ magnitude
-fBodyGyroJerkMag_meanFreq	Weighted average of the frequency components for body angular velocity derivative magnitude
+tBodyAcc_mean_X|mean body acceleration, in multiple of "g", along X axis
+tBodyAcc_mean_Y|mean body acceleration, in multiple of "g", along Y axis     
+tBodyAcc_mean_Z|mean body acceleration, in multiple of "g", along Z axis
+tBodyAcc_std_X|standard deviation of body acceleration, in multiple of "g", along X axis
+tBodyAcc_std_Y|standard deviation of body acceleration, in multiple of "g", along Y axis
+tBodyAcc_std_Z|standard deviation of body acceleration, in multiple of "g", along Z axis
+tGravityAcc_mean_X|mean gravity acceleration, in multiple of "g", along X axis
+tGravityAcc_mean_Y|mean gravity acceleration, in multiple of "g", along Y axis
+tGravityAcc_mean_Z|mean gravity acceleration, in multiple of "g", along Z axis
+tGravityAcc_std_X|standard deviation of gravity acceleration, in multiple of "g", along X axis
+tGravityAcc_std_Y|standard deviation of gravity acceleration, in multiple of "g", along Y axis
+tGravityAcc_std_Z|standard deviation of gravity acceleration, in multiple of "g", along Z axis
+tBodyAccJerk_mean_X|mean body acceleration derivative, in multiple of "g" per second, along X axis
+tBodyAccJerk_mean_Y|mean body acceleration derivative, in multiple of "g" per second, along Y axis
+tBodyAccJerk_mean_Z|mean body acceleration derivative, in multiple of "g" per second, along Z axis
+tBodyAccJerk_std_X|standard deviation of body acceleration derivative, in multiple of "g" per second, along X axis
+tBodyAccJerk_std_Y|standard deviation of body acceleration derivative, in multiple of "g" per second, along Y axis
+tBodyAccJerk_std_Z|standard deviation of body acceleration derivative, in multiple of "g" per second, along Z axis
+tBodyGyro_mean_X|mean body angular velocity, in rad/sec, along X axis
+tBodyGyro_mean_Y|mean body angular velocity, in rad/sec, along Y axis
+tBodyGyro_mean_Z|mean body angular velocity, in rad/sec, along Z axis
+tBodyGyro_std_X|standard deviation of body angular velocity, in rad/sec, along X axis
+tBodyGyro_std_Y|standard deviation of body angular velocity, in rad/sec, along Y axis
+tBodyGyro_std_Z|standard deviation of body angular velocity, in rad/sec, along Z axis
+tBodyGyroJerk_mean_X|mean of body angular velocity derivative, in rad/sec2, along X axis
+tBodyGyroJerk_mean_Y|mean of body angular velocity derivative, in rad/sec2, along Y axis
+tBodyGyroJerk_mean_Z|mean of body angular velocity derivative, in rad/sec2, along Z axis
+tBodyGyroJerk_std_X|standard deviation of body angular velocity derivative, in rad/sec2, along X axis
+tBodyGyroJerk_std_Y|standard deviation of body angular velocity derivative, in rad/sec2, along Y axis
+tBodyGyroJerk_std_Z|standard deviation of body angular velocity derivative, in rad/sec2, along Z axis
+tBodyAccMag_mean|mean body acceleration magnitude, in multiple of "g"
+tBodyAccMag_std|standard deviation of body acceleration magnitude, in multiple of "g"
+tGravityAccMag_mean|mean gravity acceleration magnitude, in multiple of "g"
+tGravityAccMag_std|standard deviation of gravity acceleration magnitude, in multiple of "g"
+tBodyAccJerkMag_mean|mean gravity acceleration derivative magnitude, in multiple of "g"/sec
+tBodyAccJerkMag_std|standard deviation of gravity acceleration derivative magnitude, in multiple of "g"/sec
+tBodyGyroMag_mean|mean body angular velocity magnitude, in rad/sec
+tBodyGyroMag_std|standard deviation of body angular velocity magnitude, in rad/sec
+tBodyGyroJerkMag_mean|mean body angular velocity derivative magnitude, in rad/sec2
+tBodyGyroJerkMag_std|standard deviation of body angular velocity derivative magnitude, in rad/sec2
+fBodyAcc_mean_X|mean of FFT coefficients for body acceleration along X axis
+fBodyAcc_mean_Y|mean of FFT coefficients for body acceleration along Y axis
+fBodyAcc_mean_Z|mean of FFT coefficients for body acceleration along Z axis
+fBodyAcc_std_X|standard deviation of FFT coefficients for body acceleration along X axis
+fBodyAcc_std_Y|standard deviation of FFT coefficients for body acceleration along Y axis
+fBodyAcc_std_Z|standard deviation of FFT coefficients for body acceleration along Z axis
+fBodyAcc_meanFreq_X|Weighted average of the frequency components for body acceleration along X axis
+fBodyAcc_meanFreq_Y|Weighted average of the frequency components for body acceleration along Y axis
+fBodyAcc_meanFreq_Z|Weighted average of the frequency components for body acceleration along Z axis
+fBodyAccJerk_mean_X|mean of FFT coefficients for body acceleration derivative along X axis
+fBodyAccJerk_mean_Y|mean of FFT coefficients for body acceleration derivative along Y axis
+fBodyAccJerk_mean_Z|mean of FFT coefficients for body acceleration derivative along Z axis
+fBodyAccJerk_std_X|standard deviation of FFT coefficients for body acceleration derivative along X axis
+fBodyAccJerk_std_Y|standard deviation of FFT coefficients for body acceleration derivative along Y axis
+fBodyAccJerk_std_Z|standard deviation of FFT coefficients for body acceleration derivative along Z axis
+fBodyAccJerk_meanFreq_X|Weighted average of the frequency components for body acceleration derivative along X axis
+fBodyAccJerk_meanFreq_Y|Weighted average of the frequency components for body acceleration derivative along Y axis
+fBodyAccJerk_meanFreq_Z|Weighted average of the frequency components for body acceleration derivative along Z axis
+fBodyGyro_mean_X|mean of FFT coefficients for body angular velocity along X axis
+fBodyGyro_mean_Y|mean of FFT coefficients for body angular velocity along Y axis
+fBodyGyro_mean_Z|mean of FFT coefficients for body angular velocity along Z axis
+fBodyGyro_std_X|standard deviation of FFT coefficients for body angular velocity along X axis
+fBodyGyro_std_Y|standard deviation of FFT coefficients for body angular velocity along Y axis
+fBodyGyro_std_Z|standard deviation of FFT coefficients for body angular velocity along Z axis
+fBodyGyro_meanFreq_X|Weighted average of the frequency components for body angular velocity along X axis
+fBodyGyro_meanFreq_Y|Weighted average of the frequency components for body angular velocity along Y axis
+fBodyGyro_meanFreq_Z|Weighted average of the frequency components for body angular velocity along Z axis
+fBodyAccMag_mean|mean of FFT coefficients for body acceleration magnitude
+fBodyAccMag_std|standard deviation of FFT coefficients for body acceleration magnitude
+fBodyAccMag_meanFreq|Weighted average of the frequency components for ody acceleration magnitude
+fBodyAccJerkMag_mean|mean of FFT coefficients for body acceleration derivative magnitude
+fBodyAccJerkMag_std|standard deviation of FFT coefficients for body acceleration derivative magnitude
+fBodyAccJerkMag_meanFreq|Weighted average of the frequency components for body acceleration derivative magnitude
+fBodyGyroMag_mean|mean of FFT coefficients for body angular velocity magnitude
+fBodyGyroMag_std|standard deviation of FFT coefficients for body angular velocity magnitude
+fBodyGyroMag_meanFreq|Weighted average of the frequency components for body angular velocity magnitude
+fBodyGyroJerkMag_mean|mean of FFT coefficients for body angular velocity derivative magnitude
+fBodyGyroJerkMag_std|standard deviation of FFT coefficients for body angular velocity derivativ magnitude
+fBodyGyroJerkMag_meanFreq|Weighted average of the frequency components for body angular velocity derivative magnitude
