@@ -65,17 +65,14 @@ data <- projectFeatures(data,f)
 data <- addActivity(data)
 
 # create the 2nd tidy data set
-data2 <- data
-data2 <- addSubject(data2)
+meanBySubjectAndActivity <- data
+meanBySubjectAndActivity <- addSubject(meanBySubjectAndActivity)
 
 # now melt and reshape to compute mean values
 
 library(reshape2)
 
-melteddata2 <- melt(data2,id.vars=c("activity","subject"))
-meanBySubjectAndActivity <- dcast(melteddata2, subject+activity ~ variable, mean)
+meanBySubjectAndActivity <- melt(meanBySubjectAndActivity,id.vars=c("activity","subject"))
+meanBySubjectAndActivity <- dcast(meanBySubjectAndActivity, subject+activity ~ variable, mean)
 write.table(meanBySubjectAndActivity,"meanBySubjectAndActivity.txt",row.names=FALSE,sep=",")
 
-# get rid of temporary df's
-melteddata2 <- NULL
-data2 <- NULL
