@@ -33,9 +33,11 @@ mean: Mean value
 std: Standard deviation  
 meanFreq: Weighted average of the frequency components to obtain a mean frequency  
 
+These were further summarized by taking their mean for each unique subject and activity combination.
+
 # Variables
  
-The complete list of variables of each feature vector is the following:
+The variables in file "data2.txt" constitute the averages for each subject and activity of the original HAR data set. The complete list of variables is the following:
 
  Variable  | Description 
  --------- | ----------- 

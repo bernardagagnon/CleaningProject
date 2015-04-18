@@ -21,5 +21,5 @@ names contain the strings "mean" or "std"
 5. Adds activity data to the data set as a column of type `factor` named `activity`
 6. Copies `data` to a second data frame called `data2`
 7. Adds the subject id to `data2`, under name `subject` 
-8. Reshapes and summarizes the variables described in "CodeBook.md" by performing their mean for a given subject and activity
+8. Reshapes and summarizes the variables of `data2` by performing their mean for a given subject and activity
 9. Writes the resulting data frame `data2` to file "data2.txt"  
