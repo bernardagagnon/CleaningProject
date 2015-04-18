@@ -73,5 +73,9 @@ data2 <- addSubject(data2)
 library(reshape2)
 
 melteddata2 <- melt(data2,id.vars=c("activity","subject"))
-data2 <- dcast(melteddata2, subject+activity ~ variable, mean)
-write.table(data2,"data2.txt",row.names=FALSE,sep=",")
+meanBySubjectAndActivity <- dcast(melteddata2, subject+activity ~ variable, mean)
+write.table(meanBySubjectAndActivity,"meanBySubjectAndActivity.txt",row.names=FALSE,sep=",")
+
+# get rid of temporary df's
+melteddata2 <- NULL
+data2 <- NULL
