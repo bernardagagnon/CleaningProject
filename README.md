@@ -7,7 +7,7 @@ The data can be downloaded at [https://d396qusza40orc.cloudfront.net/getdata%2Fp
 ## Running the script
 
 To run the script, you need to set the R working directory to the "UCI HAR Dataset" directory and then run it.
-The script will write a file called text2.txt that contains the variables described in CodeBook.md
+The script will write a file called meanBySubjectAndActivity.txt that contains the variables described in CodeBook.md
 
 ## Processing performed by the script
 
